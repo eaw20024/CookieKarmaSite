@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Quicksand|Oleo+Script|Pacifico|Lusitana' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<title>CookieKarma</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			  function filterPath(string) {
+			  return string
+			    .replace(/^\//,'')
+			    .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+			    .replace(/\/$/,'');
+			  }
+			  var locationPath = filterPath(location.pathname);
+			  $('a[href*=#]').each(function() {
+			    var thisPath = filterPath(this.pathname) || locationPath;
+			    if (  locationPath == thisPath
+			    && (location.hostname == this.hostname || !this.hostname)
+			    && this.hash.replace(/#/,'') ) {
+			      var $target = $(this.hash), target = this.hash;
+			      if (target) {
+			        var targetOffset = $target.offset().top;
+			        $(this).click(function(event) {
+			          event.preventDefault();
+			          $('html, body').animate({scrollTop: targetOffset}, 400, function() {
+            location.hash = target;
+          });
+        });
+      }
+    }
+  });
+});
+	</script>
+</head>
+<body>
+	<div class="top" id="top">
+	<div class="headerpic"></div>
+		<h1>Cookie Karma</h1>		
+	</div>
+	<hr>
+	<div class="mainMenu fixed">
+		<h2 id="topMainMenu"><a href="#">Cookie Karma</a></h2>
+			<ul>
+				<li><a href="#top">HOME</a></li>
+				<li><a href="#aboutus">ABOUT US</a></li>
+				<li><a href="#products">PRODUCTS</a></li>
+				<li><a href="mailto:mycookiekarma@gmail.com">CONTACT US</a></li>
+				<li><a href="http://www.instagram.com/_cookiekarma_" target="_blank"><img src="images/instagram_icon.png"></a></li>
+				<li><a href="https://www.facebook.com/pages/Cookie-Karma/525664210817482?sk=timeline&ref=page_internal" target="_blank"><img src="images/fb_icon.png"></a></li>
+				<li><a href="https://twitter.com/Cookie_Karma" target="_blank"><img src="images/twitter_icon.png"></a></li>
+			</ul>
+	</div>
+
+	<div class="thin_line"></div>
+			<div class="aboutus" id="aboutus">
+				<div class="section-header">
+					<img src="images/logo.png">
+					<h3>ABOUT US</h3>
+				</div>
+				<div class="section-info">
+					<div class="explanation">
+						<p>Welcome to our site! For over 20 years people have been telling us that the cookies made by "The Matriarch" could be sold to the masses, and we have always agreed. In April of 2014 we finally decided to begin packaging up these delicious treats and start selling them to the sweet-toothed cookie consumers. We believe that people who truly love cookies have a developed, sophisticated taste, and our cookies are more than up to the challenge! We are based in Maryland, just outside of Washington, DC, and many, many people in this area have fallen in love with our cookies, so we are excited to see what happens when we actually start selling them! Try some today and let us know what you think!</p><br>
+
+						<p style="color:black">Please follow us on</p> <a style="color:navy" href="https://www.facebook.com/pages/Cookie-Karma/525664210817482?sk=timeline&ref=page_internal">Facebook</a>, <a style="color:navy" href="https://twitter.com/Cookie_Karma">Twitter</a>, and <a style="color:navy" href="http://www.instagram.com/_cookiekarma_">Instagram</a><p> for updates on all of our new products.</p>
+				</div>
+			</div>
+		</div>
+
+	<div class="thin_line"></div>
+		<div class="menu" id="menu">
+			<div class="products" id="products">
+			<div class="section-header">
+				<h3>PRODUCTS</h3>
+			</div>
+			<div class="section-info">
+				<div class="header">
+					<p>We offer our rich, thick Chocolate Chip Cookies, a Peanut Butter Snickers-on-the-inside, and Oatmeal Raisin or Craisin delights.</p>
+				</div>
+				<ul class="offerings">
+					<li>
+						<img src="images/cookiekarma4.png">
+						<p>All of Cookie Karma's cookies are made from high quality ingredients and are baked to order, so that we can be sure that they maintain their freshness and mouth watering taste. We currently have three flavors. </p>
+					</li>
+					<li>
+						<img src="images/cookiekarma5.png">
+						<p>Cookie Karma's delicious cookies can be customized for any ocassion. Whether you are planning a party for a loved one, celebrating a holiday, putting together a corporate event, or just want to satisfy your sweet tooth.</p>
+					</li>
+					<li>
+						<img src="images/cookiekarma6.png">
+						<p>The cookies can be served on the spot, sent home with you, or both. If you want to learn more or you want to place and order, please call us today at 301-526-9020 or send an email to mycookiekarma@gmail.com.</p>
+					</li>
+				</ul>
+				 </div>
+			</div>
+		<div class="upcoming-events">
+				<img src="images/cookiekarma7.png">
+			</div>
+		</div>
+
+			<div class="thin_line"></div>
+			<div class="events" id="events">
+				<div class="section-header">
+					<h3>OUR LOCATION</h3>
+				</div>
+				<div class="section-info">
+
+		<div class="upcoming-events">
+				
+					</div>
+				</div>
+		</div>
+
+		<div class="contact">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.8489662755774!2d-76.9111496295613!3d38.92742947081283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c0b1450e161f%3A0x38e773abe61c2a3!2s3016+Park+Way%2C+Cheverly%2C+MD+20785!5e0!3m2!1sen!2sus!4v1410269610870" width="600" height="450" frameborder="0" style="border:0"></iframe>
+		</div>
+	
+		<div class="footer">
+			<p>2014 © Cookie Karma | <a href="http://www.ericwashington.me">Designed by Eric Washington</a></p>
+		</div>
+	</div>
+</body>
+</html>

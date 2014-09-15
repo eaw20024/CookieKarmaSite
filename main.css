@@ -1,0 +1,633 @@
+/*************************************
+			CSS Reset
+**************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*************************************
+			CSS Effects
+**************************************/
+
+@-webkit-keyframes push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/********************************************
+	Header & List Items & Section Headers
+**********************************************/
+
+a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+	display: inline-block;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+a:visited { 
+	color: #FFFFFF; 
+	text-decoration: none;
+	display: inline-block;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+a:hover { 
+	color: #ffffff; 
+	text-decoration: none;
+	-webkit-animation-name: push;
+	animation-name: push;
+	-webkit-animation-duration: 0.3s;
+	animation-duration: 0.3s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+}
+
+a:active { 
+	color: #FFFFFF; 
+	text-decoration: none;
+	display: inline-block;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+/***********************************
+		Universal Selector
+************************************/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.headerpic {
+	width: 100%;
+	height: 680px;
+	position: relative;
+	background-image: url("images/cookiekarma2.png");
+	display: block;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-position: -2px -23px;
+	overflow: hidden;
+}
+
+/***** Header Line *****/
+
+hr {
+	background-color: ;
+	border: 0 inset;
+	border-color: white;
+	border-radius: 0;
+	height: 6px;
+	margin: -39px auto;
+	width: 480px;
+}
+
+.top h1 {
+	font-family: 'Playball', cursive;
+	font-size: 180px;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 215px;
+	font-weight: bold;
+	color: #49A2FA;
+	text-shadow: 5px 5px 5px #000;
+}
+
+.mainMenu {
+	position: absolute;
+	width: 100%;
+	height: 70px;
+	background-color: #003366;
+	display: block;
+	z-index: 1;
+	margin-bottom: 70px;
+}
+
+/* Sticky Header */
+
+.fixed {  
+    position: fixed;     
+    top: 0;      
+    width: 100%;  
+    left: 0;    
+    z-index: 100;  
+    border-top: 0;
+    box-shadow: 0 4px 7px #000;
+}  
+
+.mainMenu h2 {
+	position: absolute;
+	float: left;
+	color: #ffffff;
+	font-family: 'Playball', cursive;
+	font-size: 28px;
+	top: 22px;
+	left: 20px;
+	font-weight: 400;
+}
+
+.mainMenu ul {
+	float: right;
+	color: #ffffff;
+	font-family: Lato;
+	font-size: 16px;
+	right: 5px;
+	position: absolute;
+	top: 20px;
+	font-weight: 300;
+}
+
+.mainMenu li {
+	display: inline;
+	padding: 15px;
+	vertical-align: middle;
+}
+
+/***** Section Titles *****/
+
+.section-header h3 {
+	text-align: center;
+	font-size: 40px;
+	margin-top: 10px;
+	border: 2px dashed black;
+	border-radius: 25px;
+    background: #fff;
+    display: table;
+    margin: 17px auto;
+    padding: 7px 40px;
+    font-family: 'Oleo Script', cursive; 
+}
+
+
+a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a:visited { 
+	color: #FFFFFF; 
+	text-decoration: none;
+}
+
+a:hover { 
+	color: #FFFFFF; 
+	text-decoration: none;
+}
+
+a:active { 
+	color: #FFFFFF; 
+	text-decoration: none;
+}
+
+.mainMenu li img {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+}
+
+/***** Paragraph Text *****/
+
+.explanation p {
+	font-family: 'Lusitana', serif;
+	color: black;
+	font-size: 20px;
+}
+
+
+.section-header {
+	position: relative;
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	color: #003366;
+	font-family: Lato;
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 30px;	
+}
+
+.section-info {
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+.section-info .header {
+	font-size: 28px; 
+	width: 960px;
+	font-family: Lato;
+	color: #003366;
+	display: block;
+	position: relative;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 30px;
+	font-weight: 400;
+	font-style: italic;
+	line-height: 32px;
+}
+
+.section-header img {
+	width: 400px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	display: block;
+	margin-bottom: 45px;
+}
+
+.section-info .explanation {
+	display: block;
+	position: relative;
+	color: #003366;
+	font-size: 19px;
+	text-align: center;
+	font-family: Lato;
+	font-weight: 300;
+	margin-right: auto;
+	margin-left: auto;
+	width: 960px;
+	line-height: 23px;
+	text-align: center;
+}
+
+.menu .offerings li {
+	display: inline-block;
+}
+
+.header p{
+	color: black;
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+	font-size: 28px;
+}
+
+.offerings img {
+	width: 270px;
+	margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 100%;
+	margin-top: 20px;
+}
+
+.offerings h1 {
+	font-size: 38px; 
+	width: 290px;
+	font-family: 'Pacifico', cursive;
+	color: #003366;
+	display: block;
+	position: relative;
+	text-align: center;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	font-weight: 40px;
+	line-height: 32px;
+}
+
+.offerings p {
+	display: block;
+	position: relative;
+	font-size: 19px;
+	text-align: center;
+	font-family: 'Lusitana', serif;
+	color: black;
+	font-size: 20px;
+	font-weight: 300;
+	margin-right: auto;
+	margin-left: auto;
+	width: 290px;
+	line-height: 23px;
+}
+
+.offerings {
+	margin-left: 13.5%;
+}
+
+.upcoming-events h1 {
+	font-size: 28px; 
+	font-family: Lato;
+	color: #003366;
+	display: block;
+	position: relative;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-weight: 400;
+	font-style: italic;
+	text-align: center;
+}
+
+.upcoming-events img {
+	width: 800px;
+	height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	display: block;
+	margin-top: 24px;
+	margin-bottom: 0;
+	border-radius: 80px;
+}
+
+.thin_line {
+	width: 100%;
+	height: 1px;
+	background-color: #003366;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 70px;
+	margin-bottom: 10px;
+	position: relative;
+	margin-bottom: 70px;
+}
+
+.footer {
+	height: 50px;
+	width: 100%;
+	background-color: #003366;
+	position: relative;
+	display: block;
+	margin-top: 70px;
+}
+
+.footer p {
+	color: white;
+	text-align: center;
+	padding-top: 18px;
+	font-size: 13px;
+	font-family: Lato;
+	font-weight: 300;
+	margin-left: 10px;
+}
+
+.contact iframe {
+	background-repeat: no-repeat;
+	background-size: 1400px;
+	height: 385px;
+	position: relative;
+	display: block;
+	margin-bottom: 70px;
+	margin: 0 auto;
+	width: 70%;
+
+}
+
+.contact .explanation p {
+	font-size: 25px; 
+	width: 670px;
+	font-family: Lustria;
+	color: #BBBBBF;
+	display: block;
+	position: relative;
+	margin: auto;
+	text-align: center;
+}
+
+/************************************
+			Media Queries 
+*************************************/
+
+/* Smartphones (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+
+	/****** Header Section ******/
+	.mainMenu.fixed {
+		display: none;
+	}
+
+	.top h1 {
+		display: none;
+	}
+
+	.headerpic {
+		width: 100%;
+		background-image: url("images/cookiekarma7.png");
+		background-size: 140%;
+		background-position: -79px;
+		height: 17em;
+	}
+
+	.section-info {
+		margin-right: auto;
+		margin-left: auto;
+		background-color: #fff;
+	}
+	
+	.upcoming-events img {
+		display: none;
+	}
+
+	.section-header img {
+		display: none;
+	}
+
+	.section-info .header {
+		font-size: 28px;
+		width: 80%;
+		font-family: Lato;
+		color: #003366;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 30px;
+		font-weight: 400;
+		font-style: italic;
+		line-height: 32px;
+	}
+
+	.offerings {
+		margin-left: 5.5%;
+	}
+
+	.section-info .explanation {
+		color: #003366;
+		font-size: 19px;
+		font-family: Lato;
+		font-weight: 300;
+		margin: 0 auto;
+		line-height: 28px;
+		text-align: center;
+	} 
+
+	.explanation p {
+		font-family: 'Lusitana', serif;
+		color: black;
+		font-size: 20px;
+		width: 97.8%;
+		line-height: 1.2em;
+	}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1224px) {
+
+	/****** Header Section ******/
+
+	.headerpic {
+		width: 100%;
+		background-image: url("images/cookiekarma2.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		height: 30em;
+	}
+
+	.top h1 {
+	    font-size: 6.4em;
+		color: #49A2FA;
+		text-shadow: 5px 5px 5px #000000;
+		margin-top: -0.2em;
+	}
+
+	#topMainMenu a {
+		display: none;
+	}
+
+	.mainMenu li {
+		display: inline;
+		padding: 23px;
+		vertical-align: middle;
+	}
+
+	/****** About Us Section ******/
+	
+	.section-header img {
+		max-height: 300px;
+		max-width: 300px; 
+	}
+
+	.section-header h3 {
+		text-align: center;
+		font-size: 22px;
+		margin-top: 10px;
+		border: 2px dashed black;
+		border-radius: 25px;
+		background: #fff;
+		display: table;
+		margin: 17px auto;
+		padding: 7px 40px;
+		font-family: 'Oleo Script', cursive;
+	}
+
+	.section-info .explanation {
+		color: #003366;
+		font-size: 19px;
+		font-family: Lato;
+		font-weight: 300;
+		width: 87%;
+		line-height: 23px;
+		text-align: center;
+		margin: 0 auto;
+		line-height: 1.5em;
+	}
+	
+	.section-info .header {
+		font-size: 28px;
+		width: 50%;
+		font-family: Lato;
+		color: #003366;
+		display: block;
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 30px;
+		font-weight: 400;
+		font-style: italic;
+		line-height: 32px;
+	}	
+
+	/* .section-info img {
+		display: none;
+	} */
+
+	.section-info {
+		margin-right: auto;
+		margin-left: auto;
+		background-color: #fff;
+	}
+
+	.offerings {
+		display: block;
+	}
+
+	.upcoming-events {
+		display: none;
+	}
+
+
+
+
+
+
+
+
